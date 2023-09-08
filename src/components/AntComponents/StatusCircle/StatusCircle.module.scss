@@ -1,0 +1,22 @@
+.statusCircle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	border-radius: 50%;
+
+	&.success {
+		background: var(--sSuccessLight);
+	}
+
+	&.danger {
+		background: var(--sDanger);
+	}
+
+	&.primary {
+		background: var(--sPrimary);
+	}
+}

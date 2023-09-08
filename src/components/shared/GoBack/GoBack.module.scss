@@ -1,0 +1,29 @@
+.goBack {
+	display: flex;
+	align-items: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 143%;
+	color: var(--sText);
+	gap: 7px;
+	cursor: pointer;
+
+	svg {
+		width: 12px;
+		height: 12px;
+		transition: all 0.3s linear;
+	}
+
+	span {
+		transition: all 0.3s linear;
+		text-decoration-line: underline;
+	}
+
+	&:hover {
+		svg {
+			transform: translateX(-10px);
+		}
+		color: var(--sPrimary);
+	}
+}

@@ -1,0 +1,21 @@
+@import "variables";
+
+// Utilities (abstracts)
+@import "abstracts/functions";
+
+// Mixins
+@import "abstracts/mixins/flex", "abstracts/mixins/position";
+
+// Base (Reset/normalize)
+@import "base/fonts", "base/reset", "base/general", "base/helpers", "base/svg-icon";
+
+// AntD
+@import "./antStyles/pagination";
+@import "./antStyles/table";
+@import "./antStyles/collapse";
+@import "./antStyles/btn";
+@import "./antStyles/picker";
+@import "./antStyles/input";
+
+// dark mode
+@import "./dark";

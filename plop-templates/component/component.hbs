@@ -1,0 +1,15 @@
+import { memo } from "react";
+import classes from "./{{pascalCase name}}.module.scss";
+
+// export interface I{{pascalCase name}} {};
+// {}: I{{pascalCase name}}
+
+const {{pascalCase name}} = memo(() => {
+    return (
+        <div className={classes.main}>
+            <h1>{{pascalCase name}}</h1>
+        </div>
+    )
+})
+
+export default {{pascalCase name}};

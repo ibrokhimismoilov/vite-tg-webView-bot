@@ -1,0 +1,10 @@
+.download__button {
+	display: flex;
+	align-items: center;
+
+	.label,
+	& > svg {
+		fill: var(--sPrimary);
+		margin-right: 10px;
+	}
+}

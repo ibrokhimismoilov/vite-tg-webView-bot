@@ -1,0 +1,36 @@
+.ant-modal {
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 0;
+	// background: red;
+	box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+	padding-bottom: 0 !important;
+	.ant-modal-body {
+		padding: 40px;
+	}
+
+	.ant-modal-close-x {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.search__results {
+		font-size: 17px;
+		margin-top: 35px;
+		line-height: 22px;
+	}
+
+	.results__order {
+		background-color: #e6e9ed;
+		border-radius: 5px;
+		margin: 15px;
+		padding: 3px 5px 0px;
+	}
+
+	.results__link {
+		text-decoration: underline;
+		color: #282f38;
+		width: 100%;
+	}
+}

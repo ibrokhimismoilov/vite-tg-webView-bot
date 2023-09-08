@@ -1,0 +1,106 @@
+.link {
+	color: var(--sPrimary);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 129%;
+	text-decoration-line: underline;
+	color: #325ecd;
+	cursor: pointer;
+	transition: all 0.3s linear;
+
+	&:hover {
+		color: var(--sPrimaryDanger);
+		text-decoration: underline;
+	}
+}
+
+.default-link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 133%;
+	text-decoration-line: underline;
+	transition: all 0.3s linear;
+	color: var(--sPrimary);
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.d-ib {
+	display: inline-block;
+}
+
+.d-b {
+	display: block;
+}
+
+.f-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.d-f {
+	display: flex;
+}
+
+.f-col {
+	flex-direction: column;
+}
+
+.jc-s {
+	justify-content: flex-start;
+}
+
+.jc-c {
+	justify-content: center;
+}
+
+.jc-e {
+	justify-content: flex-end;
+}
+
+.ai-s {
+	align-items: flex-start;
+}
+
+.ai-c {
+	align-items: center;
+}
+
+.ai-e {
+	align-items: flex-end;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.table-bottom {
+	gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	@media (max-width: 991px) {
+		gap: 10px;
+		flex-direction: column;
+	}
+}

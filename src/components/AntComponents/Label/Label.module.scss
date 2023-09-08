@@ -1,0 +1,17 @@
+.labelWrap {
+	position: relative;
+	width: 100%;
+
+	label {
+		position: absolute;
+		left: 10px;
+		top: 0;
+		padding: 0 3px;
+		border-radius: 3px;
+		z-index: 2;
+		line-height: 1.1;
+		color: var(--sText);
+		background: var(--sWhite);
+		transform: translateY(-50%);
+	}
+}

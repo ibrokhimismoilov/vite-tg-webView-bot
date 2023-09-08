@@ -1,0 +1,62 @@
+.table-section {
+	position: relative;
+}
+
+.table-scroll {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	display: flex;
+	justify-content: space-between;
+
+	.left_scroll,
+	.right_scroll {
+		cursor: pointer;
+		position: absolute;
+		width: 43px;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(#282f38, 0.2);
+
+		svg {
+			cursor: pointer;
+			scale: 1.5;
+
+			path {
+				transition: all 0.3s linear;
+				fill: #fff;
+			}
+		}
+
+		&:hover {
+			path {
+				fill: #0641d3;
+			}
+		}
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.right_scroll {
+		right: 0px;
+		border-radius: 20px 0px 0px 20px;
+
+		svg {
+			cursor: pointer;
+			transform: rotate(180deg);
+		}
+	}
+
+	.left_scroll {
+		left: 0px;
+		border-radius: 0px 20px 20px 0px;
+
+		svg:hover {
+			fill: #4d73d4;
+		}
+	}
+}

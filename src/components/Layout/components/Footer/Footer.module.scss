@@ -1,0 +1,23 @@
+.footer {
+	background: var(--bgFooter);
+	height: 64px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	span {
+		margin: 0;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 17px;
+		line-height: 147%;
+		color: var(--sPrimaryDanger);
+	}
+
+	&:global {
+		&.auth {
+			background: var(--bgFooterAuth);
+		}
+	}
+}

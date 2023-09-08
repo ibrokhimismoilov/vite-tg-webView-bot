@@ -1,0 +1,257 @@
+@import "~assets/scss/variables";
+
+.ant-form-item-explain-error {
+	display: flex;
+	align-items: center;
+	font-size: 17px;
+	margin-top: 2px;
+
+	div {
+		color: #c07367;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		width: 13px;
+		height: 13px;
+		background: $error;
+		border-radius: 50%;
+		margin-right: 8px;
+		flex: 0 0 auto;
+	}
+}
+
+.ant-input-number{
+	//border: none !important;
+	background: none !important;
+	border-radius: 8px !important;
+	color: #000 !important;
+}
+
+.ant-input-number-disabled{
+	background: #f5f5f5 !important;
+	border-color: #ccc !important;
+}
+
+.input {
+	position: relative;
+
+	& input {
+		font-weight: 900;
+	}
+
+	&.default {
+		input {
+			background: transparent;
+			border-radius: 8px;
+			border-color: #b6bccd;
+		}
+	}
+
+	&.small {
+		button {
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+		.ant-input-group-addon {
+			width: 28px !important;
+			height: 28px !important;
+			right: 4px !important;
+		}
+	}
+
+	&.middle {
+		button {
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+		.ant-input-group-addon {
+			width: 33px !important;
+			height: 33px !important;
+			right: 4px !important;
+		}
+	}
+
+	&.is-success {
+		input[type="text"],
+		input[type="number"],
+		input[type="password"] {
+			background: #e5f9cf !important;
+			border-color: #b0d884 !important;
+		}
+
+		p {
+			margin-top: 2px;
+			font-size: 14px;
+			color: #6b8b48;
+			margin-top: 5px;
+			display: flex;
+			align-items: center;
+
+			&:before {
+				content: "";
+				display: block;
+				width: 13px;
+				height: 13px;
+				background: #b0d884;
+				border-radius: 50%;
+				margin-right: 8px;
+				flex: 0 0 auto;
+			}
+		}
+	}
+
+	&.is-error {
+		input[type="text"],
+		input[type="number"],
+		input[type="password"] {
+			background: #fde9e6 !important;
+			border-color: #f3afa5 !important;
+		}
+	}
+
+	&.search-primary {
+		input[type="search"] {
+			padding-right: 55px;
+			border-color: #b6bccd;
+			background: #fff;
+			border-radius: 8px;
+		}
+	}
+
+	&.search-secondary {
+		input[type="search"] {
+			padding-right: 55px;
+			border-color: #b6bccd;
+			background: #fff;
+			border-radius: 8px;
+		}
+
+		button {
+			background: #e6e9ed;
+
+			&:hover,
+			&:focus {
+				background: #dbe0e7;
+			}
+		}
+
+		svg {
+			fill: $primary;
+		}
+	}
+
+	small {
+		font-size: 16px;
+		color: #717c8c;
+		margin-top: 2px;
+		display: block;
+	}
+
+	.input-label {
+		position: absolute;
+		top: -12px;
+		left: 8px;
+		z-index: 2;
+		padding: 0 5px;
+		background: #fff;
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	input[type="text"],
+	input[type="number"],
+	input[type="password"] {
+		border-radius: 8px !important;
+		font-weight: bold;
+		-moz-appearance: textfield;
+		z-index: 1;
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		&:active,
+		&:focus {
+			background: #fff !important;
+			border-color: #000;
+			box-shadow: none;
+		}
+
+		&.ant-input-disabled {
+			background-color: #f5f5f5 !important;
+			border-color: #b6bccd;
+		}
+	}
+
+	.anticon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.ant-input-group-addon {
+		position: absolute !important;
+		top: 0;
+		bottom: 0;
+		right: 12px !important;
+		left: unset !important;
+		margin: auto;
+		display: block;
+		width: 35px;
+		height: 35px;
+	}
+
+	button {
+		width: 35px !important;
+		height: 35px !important;
+		border: none;
+		background: $primary;
+		border-radius: 8px !important;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:focus,
+		.active {
+			background: $primary;
+		}
+
+		svg {
+			fill: white;
+			width: 20px;
+			height: 20px;
+		}
+
+		&:hover {
+			background: #4772df;
+		}
+	}
+
+	.ant-input-group-addon {
+		right: 7px !important;
+		width: 38px;
+		height: 38px;
+
+		button {
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+}
+
+.ant-form-item-has-error {
+	input[type="text"],
+	input[type="number"],
+	input[type="password"] {
+		border-color: #f3afa5 !important;
+		background: #fde9e6 !important;
+	}
+}

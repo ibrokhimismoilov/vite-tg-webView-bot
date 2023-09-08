@@ -1,0 +1,66 @@
+:root {
+	// FONT
+	--fs: 14px;
+	--ff: "PT Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+	// MainColors
+	--sWhite: #fff;
+	--sBlack: #000;
+	--sRed: #f00;
+
+	// Colors
+	--sPrimary: #325ecd;
+	--sPrimaryDark: #001f60;
+	--sPrimaryLight: #e8f0fd;
+	--sSecondary: #d8c1aa;
+
+	--sRed: #d62d30;
+	--sRedLight: #fde9e6;
+	--sDanger: #e9573f;
+	--sDangerLight: #ffe8e4;
+	--sSuccess: #5ba609;
+	--sSuccessLight: #e5f9cf;
+	--sWarning: #f8981d;
+	--sWarningLight: #fff3e0;
+	--sPurple: #4c2e88; //	#3B1C75
+	--sPurpleLight: #efe8ff; //
+	--sAqua: #55bef0;
+	--sBlue: #699bf7;
+
+	--titleGradient: linear-gradient(135deg, #3a416f 0%, #141727 100%), #001f60;
+
+	// text colors
+	--sTextDanger: #001f60;
+	--sText: #373d3f;
+	--sTextLight: #717c8c;
+	--sGray: #b6bccd;
+
+	// bg colors
+	--bgBody: #f8fdff;
+	--bgHeader: #ffffff;
+	--bgFooter: #f4f4f5;
+	--bgBodyAuth: #f8fdff;
+	--bgHeaderAuth: #e8f0fd;
+	--bgFooterAuth: #e8f0fd;
+	--cardBg: #fff;
+
+	// Shadows
+	--boxShadow: 0px 0px 4px rgba(0, 0, 0, 0.06), 0px 8px 16px rgba(0, 0, 0, 0.12);
+	--boxShadowHeader: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08);
+	--cardBoxShadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 4px 0px rgba(0, 0, 0, 0.06);
+
+	// borders
+	--borderColor: #a7aec1;
+
+	// table
+	--tableHeadBg: #f6f6f7;
+	--tableOddBg: #f7f7f7;
+	--tableBg: #ffffff;
+
+	// scroll
+	--scrollThumb: #5b7ed7;
+	--scrollBar: #e6e9ed;
+
+	// backgournds
+	--bgLogin: linear-gradient(135deg, #3a416f 0%, #141727 100%), #d9d9d9;
+}

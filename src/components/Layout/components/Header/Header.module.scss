@@ -1,0 +1,11 @@
+.header {
+	box-shadow: var(--boxShadowHeader);
+	background: var(--bgHeader);
+
+	.inner {
+		height: 70px;
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+}

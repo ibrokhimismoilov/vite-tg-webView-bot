@@ -1,0 +1,35 @@
+.ant-btn {
+	font-size: 17px;
+	line-height: 129%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	color: var(--sPrimary) !important;
+
+	&.ant-warning {
+		background-color: #e9573f !important;
+		color: #fff !important;
+	}
+
+	&.ant-btn-primary {
+		color: #fff !important;
+	}
+
+	&.ant-btn-dashed {
+		border: 2px solid var(--sPrimary);
+	}
+
+	&.ant-btn-lg {
+		padding: 10px 30px;
+		font-size: 19px;
+	}
+
+	&.ant-btn-small {
+		font-size: 12px;
+	}
+}
+
+.ant-modal-confirm-btns {
+	display: flex;
+	justify-content: flex-end;
+}

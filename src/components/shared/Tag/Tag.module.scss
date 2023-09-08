@@ -1,0 +1,37 @@
+.tag {
+	padding: 10px 22px;
+	border-radius: 8px;
+	gap: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 1;
+	color: #ffffff;
+
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	path,
+	svg {
+		fill: #fff !important;
+	}
+
+	&.primary {
+		background-color: var(--sPrimary);
+		color: #fff;
+	}
+
+	&.success {
+		color: #fff;
+		background-color: var(--sSuccessLight);
+	}
+
+	&.error {
+		color: #fff;
+		background-color: var(--sDanger);
+	}
+}

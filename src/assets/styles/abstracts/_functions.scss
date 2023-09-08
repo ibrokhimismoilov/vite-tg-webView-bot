@@ -1,0 +1,132 @@
+// Percent
+@function percent($px, $from) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}
+
+// REM
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+
+// EM
+/*   em(margin, font-size)
+font-size: rem(24);
+margin-right: em(10,24);
+*/
+@function em($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+$spaceAmounts: (
+	-30,
+	-15,
+	-10,
+	-5,
+	0,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8,
+	10,
+	12,
+	14,
+	15,
+	16,
+	20,
+	24,
+	25,
+	27,
+	28,
+	30,
+	32,
+	35,
+	40,
+	42,
+	44,
+	45,
+	46,
+	48,
+	50,
+	60,
+	70,
+	72,
+	80,
+	90,
+	100,
+	110,
+	120,
+	130,
+	140,
+	150,
+	160,
+	170,
+	180,
+	190,
+	200
+); // pixel amounts.
+
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceAmounts {
+	@each $side in $sides {
+		.m#{str-slice($side, 0, 1)}-#{$space} {
+			margin-#{$side}: #{$space}px !important;
+		}
+		.p#{str-slice($side, 0, 1)}-#{$space} {
+			padding-#{$side}: #{$space}px !important;
+		}
+		.gap-#{$space} {
+			gap: #{$space}px;
+		}
+		.fz-#{$space} {
+			font-size: #{$space}px;
+		}
+	}
+}
+
+.p-0 {
+	padding: 0 !important;
+}
+
+.m-0 {
+	margin: 0 !important;
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+
+.mr-auto {
+	margin-right: auto;
+}
+
+$size: (5, 10, 15, 20, 25, 30, 33, 40, 45, 50, 60, 66, 70, 80, 90, 100);
+
+@each $width in $size {
+	.w-#{$width} {
+		@if $width == 33 {
+			width: #{$width} + ".33%" !important;
+		} @else {
+			@if $width == 66 {
+				width: #{$width} + ".66%" !important;
+			} @else {
+				width: #{$width} + "%" !important;
+			}
+		}
+	}
+}
+
+$size: (5, 10, 15, 20, 25, 30, 33, 40, 45, 50, 60, 66, 70, 80, 90, 100, 150, 200, 300);
+
+@each $width in $size {
+	.mw-#{$width} {
+		width: #{$width} + "px" !important;
+		min-width: #{$width} + "px" !important;
+	}
+}

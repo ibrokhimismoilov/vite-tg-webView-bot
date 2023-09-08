@@ -1,0 +1,14 @@
+.main {
+	display: inline-flex;
+	align-items: center;
+	gap: 20px;
+	margin-left: auto;
+
+	& > span {
+		color: var(--sText);
+	}
+
+	@media (max-width: 1200px) {
+		margin-left: initial;
+	}
+}

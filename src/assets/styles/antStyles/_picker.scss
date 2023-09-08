@@ -1,0 +1,23 @@
+.ant-picker {
+	.ant-picker-suffix {
+		svg {
+			width: 20px;
+			height: 20px;
+			color: var(--sPrimary);
+		}
+	}
+
+	&.ant-picker-range {
+		.ant-picker-range-separator {
+			span {
+				margin: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				svg {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

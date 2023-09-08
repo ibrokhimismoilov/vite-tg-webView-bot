@@ -1,0 +1,243 @@
+.uzb {
+	$w: 495px;
+	$h: 324px;
+	filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+	position: relative;
+	width: $w;
+	height: $h;
+
+	svg {
+		width: 100%;
+
+		path {
+			cursor: pointer;
+			fill: #b3c3ee;
+			transition: all 0.3s ease;
+
+			&:hover {
+				fill: #f3d875;
+			}
+			&.active {
+				fill: #e0c66b;
+			}
+		}
+	}
+}
+
+:global {
+	.u {
+		&-pointers {
+			// svg dagi width va height razmer
+			$w: 495px;
+			$h: 324px;
+
+			position: absolute;
+			height: $h;
+			width: $w;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			pointer-events: none;
+			// opacity: 0.3;
+		}
+
+		&-pointer {
+			// transform: translate(-50%, -50%);
+			position: absolute;
+			z-index: 2;
+			transition: all 0.3s ease;
+
+			&__content {
+				position: absolute;
+				z-index: 4;
+				padding: 0 5px;
+				background: var(--sPrimary);
+				width: fit-content;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				pointer-events: none;
+				border-radius: 10px;
+				transition: all 0.3s ease;
+				transform: translate(calc(-50% + 3.5px), calc(-100% - 5px));
+
+				&::after {
+					content: "";
+					z-index: 4;
+					position: absolute;
+					left: 50%;
+					height: 10px;
+					width: 5px;
+					transform: translateX(-50%);
+					bottom: -10px;
+					transition: all 0.3s ease;
+					border: 5px solid transparent;
+					border-top-color: var(--sPrimary);
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: 50%;
+					top: 100%;
+					height: 0;
+					opacity: 0;
+					pointer-events: none;
+					transition: all 0.3s ease;
+					transform: translate(-50%);
+					border: 1px dashed var(--sPrimary);
+				}
+
+				&-text {
+					display: none;
+					font-size: 12px;
+					font-weight: 700;
+					line-height: 14px;
+					text-align: center;
+					color: var(--sWhite);
+				}
+
+				&-count {
+					width: 100%;
+					display: block;
+					font-size: 12px;
+					font-weight: 700;
+					line-height: 14px;
+					text-align: center;
+					color: var(--sWhite);
+				}
+			}
+
+			&__dot {
+				&-danger {
+					position: absolute;
+					z-index: 3;
+					width: 7px;
+					height: 7px;
+					border-radius: 50%;
+					background: var(--sDanger);
+					border: 1px solid var(--sWhite);
+				}
+
+				&-primary {
+					position: absolute;
+					z-index: 4;
+					width: 7px;
+					height: 7px;
+					border-radius: 50%;
+					background: var(--sPrimary);
+					border: 1px solid var(--sWhite);
+				}
+			}
+
+			&.active {
+				z-index: 10;
+				.u-pointer {
+					z-index: 10;
+
+					&__content {
+						padding: 5px 11px;
+						box-shadow: 0 5px 10px #ffffff60;
+						transform: translate(calc(-50% + 3.5px), calc(-100% - 50px));
+
+						&-text {
+							display: block;
+						}
+
+						&::before {
+							opacity: 1;
+							height: 50px;
+						}
+					}
+				}
+			}
+
+			// ============================================================
+			// regions - ids
+			// Buxoro
+			&-1 {
+				top: 64.12%;
+				left: 44.23%;
+			}
+
+			// Xorazm
+			&-2 {
+				top: 47.9%;
+				left: 26.1%;
+			}
+
+			// Qoraqolpag'iston
+			&-3 {
+				top: 34.85%;
+				left: 20.9%;
+			}
+
+			// Navoiy
+			&-4 {
+				top: 45.74%;
+				left: 44.84%;
+			}
+
+			// Samarqand
+			&-5 {
+				top: 67.25%;
+				left: 60.44%;
+			}
+
+			// Qashqadaryo
+			&-6 {
+				top: 79.68%;
+				left: 55.19%;
+			}
+
+			// Surhandaryo
+			&-7 {
+				top: 94.32%;
+				left: 63.7%;
+			}
+
+			// Andijon
+			&-8 {
+				top: 57.58%;
+				left: 94.74%;
+			}
+
+			// Farg'ona
+			&-9 {
+				top: 61.94%;
+				left: 85.21%;
+			}
+
+			// Namangan
+			&-10 {
+				top: 55.4%;
+				left: 88.65%;
+			}
+
+			// Jizzakh
+			&-11 {
+				top: 63.18%;
+				left: 64.72%;
+			}
+
+			// Sirdaryo
+			&-12 {
+				top: 62.25%;
+				left: 73.44%;
+			}
+
+			// Toshkent
+			&-13 {
+				top: 56.3%;
+				left: 81.3%;
+			}
+
+			// Toshkent shahar
+			&-14 {
+				top: 51.35%;
+				left: 76.69%;
+			}
+		}
+	}
+}

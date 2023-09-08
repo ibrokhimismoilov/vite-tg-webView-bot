@@ -1,0 +1,10 @@
+.iconWithContent {
+	gap: 10px;
+	display: inline-flex;
+	align-items: center;
+
+	svg {
+		width: 20px !important;
+		height: 20px !important;
+	}
+}

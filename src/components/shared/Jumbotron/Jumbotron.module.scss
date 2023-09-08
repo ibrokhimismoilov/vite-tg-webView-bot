@@ -1,0 +1,49 @@
+.jumbotron {
+	border-radius: 10px;
+
+	.title {
+		font-style: normal;
+		font-weight: 700;
+		padding: 18px;
+		font-size: 19px;
+		line-height: 132%;
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		color: var(--sPrimaryDark);
+	}
+
+	.duble {
+		display: flex;
+		width: 100%;
+
+		& > * {
+			width: 100%;
+		}
+	}
+
+	&.noBorderBottom {
+		border-radius: 10px 10px 0 0;
+	}
+
+	&.primary {
+		background: var(--sPrimaryLight);
+	}
+
+	&.success {
+		background: var(--sSuccessLight);
+	}
+
+	&.warinig {
+		background: var(--sWarinigLight);
+	}
+
+	&.purple {
+		background: var(--sPurpleLight);
+	}
+
+	&.danger {
+		background: var(--sDangerLight);
+	}
+}

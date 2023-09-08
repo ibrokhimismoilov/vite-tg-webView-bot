@@ -1,0 +1,61 @@
+.searchFilter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	width: 100%;
+
+	:global {
+		.ant-space {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.search {
+		display: flex;
+		margin-left: auto;
+		align-items: center;
+
+		.searchInput {
+			width: 0px;
+			opacity: 0;
+			pointer-events: none;
+			overflow: hidden;
+			margin-right: 10px;
+			transition: all 0.3s ease;
+
+			:global {
+				.ant-input-group-addon {
+					display: none;
+				}
+			}
+		}
+
+		.icon {
+			width: 36px;
+			height: 36px;
+			overflow: hidden;
+			border-radius: 50%;
+			display: flex;
+			cursor: pointer;
+			align-items: center;
+			justify-content: center;
+			background: var(--sPrimary);
+			z-index: 1;
+
+			svg {
+				path {
+					fill: #fff;
+				}
+			}
+		}
+
+		&Toggle {
+			.searchInput {
+				opacity: 1;
+				width: 240px;
+				pointer-events: all;
+			}
+		}
+	}
+}

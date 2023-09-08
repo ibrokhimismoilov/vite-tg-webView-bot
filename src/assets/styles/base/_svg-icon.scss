@@ -1,0 +1,37 @@
+.svg-icon {
+	&-success {
+		path {
+			fill: var(--sSuccessLight);
+		}
+	}
+
+	&-danger {
+		path {
+			fill: var(--sDanger);
+		}
+	}
+
+	&-primary {
+		path {
+			fill: var(--sPrimary);
+		}
+	}
+
+	&-warning {
+		path {
+			fill: var(--sWarning);
+		}
+	}
+
+	&-aqua {
+		path {
+			fill: darkturquoise;
+		}
+	}
+
+	&-white {
+		path {
+			fill: var(--sWhite);
+		}
+	}
+}

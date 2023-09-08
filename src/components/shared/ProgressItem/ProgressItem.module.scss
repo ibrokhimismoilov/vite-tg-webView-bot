@@ -1,0 +1,52 @@
+.progressItem {
+	&:not(:last-child) {
+		margin-bottom: 0px;
+	}
+
+	.head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: -3px;
+
+		.label {
+			font-family: "PT Sans";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 124%;
+			background: var(--titleGradient);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+
+		.count {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 127%;
+			text-align: right;
+
+			&.primary {
+				color: var(--sPrimary);
+			}
+
+			&.success {
+				color: var(--sSuccess);
+			}
+
+			&.danger {
+				color: var(--sDanger);
+			}
+
+			&.warning {
+				color: var(--sWarning);
+			}
+
+			&.purple {
+				color: var(--sPurple);
+			}
+		}
+	}
+}
